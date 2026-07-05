@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive information about THINK AND ACT FOR TANZANIA (TATA) - registration, constitution, reports, and organization profile.">
+    <title>TATA - Learn More</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for learn-more page */
+        .document-section {
+            padding: 80px 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-mid);
+        }
+
+        .document-section:nth-child(even) {
+            background: var(--gray-light);
+        }
+
+        .document-section:last-child {
+            border-bottom: none;
+        }
+
+        .document-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .document-header .doc-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: var(--primary-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .document-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin: 0;
+        }
+
+        .document-header h2 span {
+            color: var(--primary);
+        }
+
+        .document-content {
+            padding-left: 66px;
+        }
+
+        .document-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .document-content ul {
+            margin-bottom: 16px;
+        }
+
+        .document-content ul li {
+            padding: 6px 0;
+            color: var(--text);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .document-content ul li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 20px 24px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 20px 0;
+        }
+
+        .info-card-small {
+            background: var(--white);
+            padding: 20px 24px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 3px solid var(--primary);
+        }
+
+        .info-card-small h4 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .info-card-small p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .constitution-articles {
+            display: grid;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .constitution-article {
+            background: var(--white);
+            padding: 16px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-left: 3px solid var(--secondary);
+        }
+
+        .constitution-article h4 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .constitution-article p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .report-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .report-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .report-card h4 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .report-card ul {
+            margin: 8px 0 0;
+        }
+
+        .report-card ul li {
+            padding: 4px 0;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .reg-certificate {
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .reg-certificate img {
+            width: 100%;
+            height: auto;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .badge-doc {
+            background: var(--gray-light);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-doc i {
+            color: var(--primary);
+        }
+
+        .motto-highlight {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--dark-secondary), var(--dark));
+            border-radius: var(--radius);
+            color: var(--white);
+            margin: 30px 0;
+        }
+
+        .motto-highlight h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .motto-highlight p {
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+
+        .motto-highlight .motto-text {
+            font-size: 1.4rem;
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .document-content {
+                padding-left: 0;
+            }
+
+            .grid-2col,
+            .report-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .document-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .document-header .doc-icon {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="nembo.png" alt="TATA Logo">
+                        <span>TATA</span>
+                    </div>
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision-mission.html">Vision & Mission</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="learn-more.html" class="active">Learn More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Learn More About TATA</h1>
+            <p>Comprehensive information about our organization, registration, constitution, and reports</p>
+        </div>
+    </section>
+
+    <!-- Organization Profile -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-building"></i></div>
+                <h2>Organization <span>Profile</span></h2>
+            </div>
+            <div class="document-content">
+                <p><strong>THINK AND ACT FOR TANZANIA (TATA)</strong> is a Non-Governmental Organization registered under the Ministry of Health, Community Development, Gender, Elders, Women's and Children with registration number <strong>OONGO/R/0371</strong>.</p>
+                
+                <div class="grid-2col">
+                    <div class="info-card-small">
+                        <h4>Registration</h4>
+                        <p><strong>OONGO/R/0371</strong><br>August 06, 2019</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Area of Operation</h4>
+                        <p>Tanzania Mainland<br>Focus: People with Disabilities</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Thematic Areas</h4>
+                        <p>Education, Health, Agriculture, Good Governance, Road Safety</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Motto</h4>
+                        <p><em>"Think Big, Start Small, Be Part of Change"</em></p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Mission:</strong> Work with Tanzanian citizens in the aspects of health, education, agriculture, good governance, and road safety in order to spearhead rural development for improving quality of life.</p>
+                </div>
+
+                <div class="highlight-box" style="border-left-color: var(--secondary); background: var(--secondary-light);">
+                    <p><strong>Vision:</strong> To have a community whose do prosper socially, economically, and hygienically and that are able to reduce ignorance, diseases, and road accidents, hence enjoy a fulfilled and prolonged life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Certificate -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-certificate"></i></div>
+                <h2>Registration <span>Certificate</span></h2>
+            </div>
+            <div class="document-content">
+                <div class="reg-certificate">
+                    <img src="TATA%20reg.jpeg" alt="TATA Registration Certificate">
+                </div>
+                <div class="grid-2col">
+                    <div class="info-card-small">
+                        <h4>Registration Number</h4>
+                        <p><strong>OONGO/R/0371</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Date of Issue</h4>
+                        <p><strong>August 06, 2019</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Expiry Date</h4>
+                        <p><strong>August 05, 2029</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Valid For</h4>
+                        <p><strong>10 Years</strong></p>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <h4 style="margin-bottom: 8px;">Conditions of Registration</h4>
+                    <ul style="margin: 0;">
+                        <li><i class="fas fa-check-circle"></i> The Organization shall operate in Tanzania Mainland</li>
+                        <li><i class="fas fa-check-circle"></i> The Organization shall operate in accordance with its governing Constitution and the Laws of Tanzania</li>
+                        <li><i class="fas fa-check-circle"></i> This certificate shall be valid for a period of ten (10) years from the issuing date</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Constitution -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-gavel"></i></div>
+                <h2>Organization <span>Constitution</span></h2>
+            </div>
+            <div class="document-content">
+                <p><strong>THINK AND ACT FOR TANZANIA (TATA)</strong> is governed by a comprehensive constitution that outlines the organization's structure, operations, and guiding principles.</p>
+
+                <div class="badge-container">
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 1: Name</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 3: Preamble</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 4: Registration</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 5: Head Office</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 6: Area of Operation</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 10: Membership</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 14-17: Office Bearers</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 18-19: Board of Directors</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 20-23: General Meetings</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 25-27: Funds & Accounts</span>
+                    <span class="badge-doc"><i class="fas fa-check-circle"></i> Article 28-30: Amendments & Dissolution</span>
+                </div>
+
+                <div class="constitution-articles">
+                    <div class="constitution-article">
+                        <h4>Article 1: Name</h4>
+                        <p>The name of the Organization shall be <strong>THINK AND ACT FOR TANZANIA (TATA)</strong></p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 3: Preamble</h4>
+                        <p>TATA as a local development initiative believes that the role to bring about change to the people and nation is ours. The motto <em>"Think Big, Start Small, Be Part of Change"</em> guides our work.</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 5: Head Office</h4>
+                        <p>The head office is based at Mbeza Street, Foroforo Kiuzai Ward, Korogwe District, Tanga Region, P.O. Box 584.</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 9: Objectives</h4>
+                        <p>
+                            <strong>1.</strong> Promote community awareness on good governance<br>
+                            <strong>2.</strong> Raising awareness to community on education and health<br>
+                            <strong>3.</strong> Facilitate Tanzania citizens to support Albinos, deaf, dumb, cripples, PLWHIV, children, and women<br>
+                            <strong>4.</strong> Advocate and support community in provision of social services
+                        </p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 10-12: Membership</h4>
+                        <p>Membership is voluntary and open to any individual of 18 years and above. Types: Founder Members and Ordinary Members.</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 14-16: Office Bearers</h4>
+                        <p><strong>Chairperson:</strong> Presides over meetings, spokesman, signatory<br>
+                        <strong>Secretary General:</strong> Calls meetings, keeps documents, signatory<br>
+                        <strong>Treasurer:</strong> Keeps money, prepares budgets, signatory</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 18-19: Board of Directors</h4>
+                        <p>Composed of Chairperson, Executive Secretary, Treasurer, and appointed members. Holds meetings twice a year, quorum 2/3.</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 20-23: General Meetings</h4>
+                        <p>Supreme organ composed of all members. Annual General Meeting held once a year. Quorum: 2/3 of members.</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 25-27: Funds & Accounts</h4>
+                        <p>Sources: Entry fees, fundraising, grants, donations, income generating activities. Bank account with three signatories.</p>
+                    </div>
+                    <div class="constitution-article">
+                        <h4>Article 29: Dissolution</h4>
+                        <p>May be dissolved by 2/3 majority vote. Assets transferred to another NGO with similar objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quarterly Reports -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-chart-bar"></i></div>
+                <h2>Quarterly <span>Reports</span></h2>
+            </div>
+            <div class="document-content">
+                <h3 style="margin-bottom: 16px;">January - March 2020 Report</h3>
+                
+                <div class="highlight-box">
+                    <p><strong>Report submitted to:</strong> Korogwe District Executive Director<br>
+                    <strong>Date:</strong> April 06, 2020</p>
+                </div>
+
+                <div class="report-grid">
+                    <div class="report-card">
+                        <h4>Activities Implemented</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> Identifying people with special needs</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> Conducting discussions with people with disabilities</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> Understanding their lives and challenges</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> Community awareness on rights</li>
+                        </ul>
+                    </div>
+                    <div class="report-card">
+                        <h4>Areas Covered</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> <strong>Bungu Ward:</strong> Mheza, Kwakibomi</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> <strong>Magoma Ward:</strong> Kwemazandu, Kerenge Kibaoni</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> <strong>Mombo Ward:</strong> Mazinde Mheza, Bagamoyo, Chekelei, Makuyuni</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 style="margin: 20px 0 12px;">Key Findings</h4>
+                <div class="grid-2col">
+                    <div class="info-card-small">
+                        <h4>Educational Challenges</h4>
+                        <ul style="margin: 6px 0 0; padding: 0;">
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Many didn't complete primary/secondary education</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Parents gave up on children's education</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Low awareness about inclusive education</li>
+                        </ul>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Health Challenges</h4>
+                        <ul style="margin: 6px 0 0; padding: 0;">
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Lack of assistive devices</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Limited access to government health services</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Need for prosthetics and mobility aids</li>
+                        </ul>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Economic Challenges</h4>
+                        <ul style="margin: 6px 0 0; padding: 0;">
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Limited access to loans (2% from internal revenue)</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Need for project management training</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Inadequate statistical data on special groups</li>
+                        </ul>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Recommendations</h4>
+                        <ul style="margin: 6px 0 0; padding: 0;">
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Provide training before issuing loans</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Update the register of people with disabilities</li>
+                            <li style="padding: 3px 0; font-size: 0.95rem;">Conduct in-depth research on support needs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 style="margin: 20px 0 12px;">Planned Activities (April - June 2020)</h4>
+                <div class="highlight-box" style="border-left-color: var(--secondary); background: var(--secondary-light);">
+                    <ul style="margin: 0;">
+                        <li><i class="fas fa-arrow-right"></i> Continue community engagement and awareness</li>
+                        <li><i class="fas fa-arrow-right"></i> Develop proposals for donor funding</li>
+                        <li><i class="fas fa-arrow-right"></i> Expand outreach to more villages</li>
+                        <li><i class="fas fa-arrow-right"></i> Strengthen partnerships with government and other organizations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Objectives & Themes -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-bullseye"></i></div>
+                <h2>Objectives & <span>Thematic Areas</span></h2>
+            </div>
+            <div class="document-content">
+                <h3 style="margin-bottom: 12px;">Key Objectives</h3>
+                <div class="grid-2col">
+                    <div class="info-card-small">
+                        <h4>1. Good Governance</h4>
+                        <p>Promote community awareness on good governance, road safety, and HIV/AIDS.</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>2. Support Vulnerable Groups</h4>
+                        <p>Facilitate support for Albinos, deaf, dumb, cripples, PLWHIV, women, and children to acquire education and vocational training.</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>3. Awareness Raising</h4>
+                        <p>Raise awareness on education, health, and agriculture methodologies to fight poverty.</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>4. Social Services Advocacy</h4>
+                        <p>Advocate and support community in provision of social services.</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>5. Capacity Building</h4>
+                        <p>Train organization staff for career development and quality service delivery.</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>6. Research</h4>
+                        <p>Conduct research and apply findings to bring positive change in development.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin: 30px 0 12px;">Thematic Areas of Operation</h3>
+                <div class="grid-2col">
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>📚 Education</h4>
+                        <p>Supporting access to quality education and vocational training for vulnerable groups.</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>🏥 Health</h4>
+                        <p>Promoting health awareness, hygiene practices, and access to healthcare services.</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>🌾 Agriculture</h4>
+                        <p>Empowering communities with sustainable agricultural practices and food security.</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>🤝 Good Governance</h4>
+                        <p>Building awareness on governance, human rights, and community participation.</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary); grid-column: span 2;">
+                        <h4>🚦 Road Safety</h4>
+                        <p>Educating communities on road safety to reduce accidents and save lives.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Collaboration:</strong> TATA collaborates with Groups (IGAs), CBOs, NGOs (local and international), and other development partners in the five key areas to fight against poverty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Structure -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-sitemap"></i></div>
+                <h2>Management <span>Structure</span></h2>
+            </div>
+            <div class="document-content">
+                <p>The management structure of TATA organization is built with democratic leadership, where board members are part of the Organization leaders.</p>
+
+                <div class="grid-2col">
+                    <div class="info-card-small">
+                        <h4>Chairperson / Director</h4>
+                        <p><strong>Yohana Charles Sekimweri</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Executive Secretary</h4>
+                        <p><strong>Juma Ally Rashid</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Organization Accountant</h4>
+                        <p><strong>Samsoni Katamboi</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Organization Coordinator</h4>
+                        <p><strong>George Hizza</strong></p>
+                    </div>
+                </div>
+
+                <h4 style="margin: 20px 0 12px;">Sectoral Committees</h4>
+                <div class="grid-2col">
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>Education Sector</h4>
+                        <p>Coordinates educational programs and initiatives</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>Health & Environment</h4>
+                        <p>Manages health promotion and environmental protection</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>Agriculture Sector</h4>
+                        <p>Oversees agricultural development programs</p>
+                    </div>
+                    <div class="info-card-small" style="border-top-color: var(--secondary);">
+                        <h4>Road Safety & Governance</h4>
+                        <p>Coordinates road safety and good governance initiatives</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="border-left-color: var(--primary); background: var(--primary-light);">
+                    <h4 style="margin-bottom: 8px;">Board Responsibilities</h4>
+                    <ul style="margin: 0;">
+                        <li><i class="fas fa-check-circle"></i> Propose candidates for vacant positions</li>
+                        <li><i class="fas fa-check-circle"></i> Review contracts and make organizational decisions</li>
+                        <li><i class="fas fa-check-circle"></i> Receive, review, and approve the organization budget</li>
+                        <li><i class="fas fa-check-circle"></i> Advise management on implementation and supervision</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Address -->
+    <section class="document-section">
+        <div class="container">
+            <div class="document-header">
+                <div class="doc-icon"><i class="fas fa-address-card"></i></div>
+                <h2>Contact <span>Address</span></h2>
+            </div>
+            <div class="document-content">
+                <div class="grid-2col">
+                    <div class="info-card-small">
+                        <h4>Office Location</h4>
+                        <p>Kilole Korogwe<br>Adjacent to Bus Stand<br>P.O. Box 584, Korogwe, Tanga</p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Phone Numbers</h4>
+                        <p><strong>+255 784 390 933</strong><br>
+                        <strong>+255 715 390 935</strong><br>
+                        <strong>+255 717 871 302</strong></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Email</h4>
+                        <p><a href="mailto:tanzaniathinkandactfor@gmail.com" style="color: var(--primary);">tanzaniathinkandactfor@gmail.com</a></p>
+                    </div>
+                    <div class="info-card-small">
+                        <h4>Website</h4>
+                        <p>Under Construction</p>
+                    </div>
+                </div>
+
+                <div class="motto-highlight">
+                    <h3>Our Motto</h3>
+                    <p class="motto-text">"Think Big, Start Small, Be Part of Change"</p>
+                    <p style="margin-top: 8px;">— THINK AND ACT FOR TANZANIA (TATA)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Support Our <span>Work</span></h2>
+                <p>Help us continue making a difference in Tanzanian communities. Partner with us today.</p>
+                <a href="contact.html" class="btn btn-primary">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="nembo.png" alt="TATA Logo">
+                        <span>TATA</span>
+                    </div>
+                    <p>THINK AND ACT FOR TANZANIA (TATA) is a registered NGO focused on rural development, disability support, and community empowerment since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/255784390933" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision-mission.html">Vision & Mission</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="learn-more.html">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Focus Areas</h3>
+                    <ul>
+                        <li><a href="projects.html#education">Education</a></li>
+                        <li><a href="projects.html#health">Health & Environment</a></li>
+                        <li><a href="projects.html#agriculture">Agriculture</a></li>
+                        <li><a href="projects.html#governance">Good Governance</a></li>
+                        <li><a href="projects.html#safety">Road Safety</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Korogwe Town, Tanga, Tanzania</li>
+                        <li><i class="fas fa-phone"></i> +255 784 390 933</li>
+                        <li><i class="fas fa-envelope"></i> tanzaniathinkandactfor@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 THINK AND ACT FOR TANZANIA (TATA). All Rights Reserved.</p>
+                <p>Motto: <em>"Think Big, Start Small, Be Part of Change"</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/255784390933" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with us</span>
+        </a>
+    </div>
+</body>
+</html>
